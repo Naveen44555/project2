@@ -5,16 +5,24 @@
     /* border: 2px red solid; */
 }
 .container-fluid{
-    display: flex;
-       gap: 150px;
-       height: 65px;
+    /* display: flex; */
+       gap:76px;
+       height: 70px;
        /* border: 2px rgb(46, 170, 15) solid; */
        background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity))
          /* background-color: rgba(255, 255, 0, 0.112); */
 }
+#name{
+  margin-left: -72px;
+  /* border: 2px greenyellow solid; */
+}
+.container-fluid img{
+  width: 55px;
+}
 .d-flex input{
-    width: 250px;
+    width: 330px;
     height: 40px;
+    /* border: 2px solid red; */
 }
 .icons{
     width: 25%;
@@ -25,7 +33,29 @@
     cursor: pointer;
 }
 #banner{
-    margin-top: 20px;
+    margin-top: 5px;
+}
+.titles{
+position: absolute;
+top: 200px;
+left: 130px;
+}
+.titles h3{
+  font-size: 50px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: red;
+}
+.titles h1{
+  font-size: 50px;
+}
+.titles button{
+  background-color: #130606;
+  color: white;
+  /* border-radius: 10px; */
+}
+.titles button:hover{
+  background-color: red;
+  color: white;
 }
 .free{
     width: 100%;
@@ -40,6 +70,9 @@
     justify-content: center;
      align-items: center;
 }
+.nav-item a{
+  color: #130606;
+}
 .nav-item a:hover{
   color: rgb(240, 237, 238);
 }
@@ -52,11 +85,18 @@
 }
 .box{
     width: 30%;
-   height: 110px;
+   height: 100px;
       border: 2px rgba(98, 98, 94, 0.289) solid;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;     
+      align-items: center; 
+      flex-wrap: wrap;    
+}
+.matter p{
+ color: gray;
+}
+.matter h5,.matter p{
+  margin: 0;
 }
 .box .icon{
     font-size: 40px;
@@ -74,17 +114,21 @@
 }
 .w11{
     width: 30%;
-    border: 2px green solid;
+    /* border: 2px green solid; */
     display: flex;
     /* justify-content: space-evenly; */
     align-items: center;
-       background-color:rgb(116, 226, 217);
+      background-color: #00ffff63;
 }
 #wom{
     background-color: pink;
 }
+.para button:hover{
+  background-color: black;
+  color: white;
+}
 #kids{
-    background-color:rgb(223, 189, 147);
+    background-color:#f6efaeec;
 }
 .pics img{
     width: 200px;
@@ -94,69 +138,6 @@
     text-align: center;
       unicode-bidi: isolate;
 }
-/* 
-#products{
-    width: 100%;
-    height: 180vh;
-    margin-top: 50px;
-      display: flex;
-    justify-content: center;
-    align-items: center;
-       border: 2px red solid;
-}
-.items{
-    width: 85%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-       margin-bottom: 0;
-    
-       flex-wrap: wrap;
-}
-.dresses{
-     margin-bottom: 0;
-     width: 20%;
-     height: 550px;
-     text-decoration: none;
-     border: 2px red solid;
- 
-}
-.card-title{
-    margin-bottom: -20px;
-}
-.card{
-    margin-bottom: 0;
-    width: 20%;
-}
-.card img{
-    width: 80%;
-         border: 2px rgb(115, 192, 27) solid;
-}
-.card-body img{
-    width: 90px;
-    /* height: 90px; */
-     /* border: 2px rebeccapurple solid; */
-/* }
-.card-body p{
-    font-weight: bold;
-}
-#price{
-    margin-top: -20px; */
-    /* margin-bottom: -30px; */
-    /* border: 2px rebeccapurple solid; */
-/* }
-.card-body span{
-    font-weight: lighter;
-    text-decoration: line-through;
-    margin:20px
-}  */
-  /* #ppr{
-    height: 800px;
-     border: 2px red solid;
-  } */
-
 .feature{
     width: 80%;
     text-align: center;
@@ -171,7 +152,8 @@
       margin: 40px 0 5px 0;
       position: relative;
     }
-    /* Heading style */
+
+
     #products h3 {
       display: inline-block;
       padding: 0 20px;
@@ -187,7 +169,6 @@
       content: "";
       position: absolute;
       top: 40%;
-      
       left: 7%;
       width: 86%;
       height: 1px;
@@ -195,7 +176,7 @@
       z-index: 0;
     }
 .products{
-    border: 2px red solid;
+    /* border: 2px red solid; */
     height: 130vh;
     display: flex;
     justify-content: space-around;
@@ -235,7 +216,11 @@
     text-decoration: line-through;
 }  
 .p1 button{
-    background-color: rgb(242, 242, 13);
+    background-color: white;
+}
+.p1 button:hover{
+  background-color: rgb(109, 35, 179);
+  color: white;
 }
 #quick {
   position: absolute;
@@ -320,16 +305,35 @@
             flex-wrap: wrap;
         /* justify-items: center; */
 }
-.glasses{
-  
-    /* border: 2px gold solid; */
-    width: 23%;
-    height: 70vh;
-    /* padding: 10PX; */
-    margin: 0 10px;
-    text-align: center;
-    background-color:white;
+.glasses {
+  /* border: 2px gold solid; */
+  width: 23%;
+  height: 70vh;
+  margin: 0 10px;
+  text-align: center;
+  background-color: white;
+  position: relative; /* Important for positioning the discount badge */
 }
+
+.discount {
+  position: absolute;
+  top: 10px;    /* distance from top */
+  right: 10px;  /* distance from right */
+}
+
+.discount p {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
 .glasses img{
     width: 100%;
     height: 66%;
@@ -493,7 +497,7 @@
 .blogs{
   width: 90%;
   /* margin: 20px; */
-   border: 2px rgba(95, 13, 177, 0.876) solid;
+   /* border: 2px rgba(95, 13, 177, 0.876) solid; */
   display: flex;
   flex-wrap: wrap;
   }
@@ -532,39 +536,57 @@
   }
 
   /* brands----------------------- */
-  #brands {
+/* main scrolling area */
+#brands {
   width: 100%;
   height: 15vh;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  overflow: hidden;  /* important */
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
 }
+
+/* Mask left/right edges to hide scroll-out */
+#brands::before,
+#brands::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  background: white; /* same as page background */
+  z-index: 2;
+}
+#brands::before { left: 0; }
+#brands::after { right: 0; }
 
 .brands {
-  border: 2px red solid;
   width: 90%;
-  display: flex;
-  gap: 15px;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: brand 20s linear  1s infinite;
-  /* justify-content: center; */
-}
-.brands img {
-  border: 2px gray solid;
-  border-radius: 10px;
-  height: 100px; /* optional */
+  overflow: hidden;
+  position: relative;
 }
 
-/* @keyframes brand {
+.bran {
+  display: flex;
+  gap: 20px;
+  animation: brands 15s linear infinite;
+}
+.sony img {
+  height: 100px;
+  border-radius: 10px;
+  border: 2px gray solid;
+}
+/* Smooth continuous scroll */
+@keyframes brands {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
-} */
-
+}
 
 /*  Products----------------------*/
 
@@ -572,10 +594,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 .big{
   width: 90%;
-   border: 2px rgb(7, 189, 79) solid;
+   /* border: 2px rgb(7, 189, 79) solid; */
   /* border-radius: 10px; */
   display: flex;
   /* justify-content: space-evenly; */
@@ -588,6 +611,7 @@
    height: 82vh;
    display: block;
    gap: 5px;
+   flex-wrap: wrap;
 }
 .small{
   width: 100%;
@@ -595,6 +619,7 @@
     display: flex;
     gap: 20px;
       /* border: 2px rgb(195, 85, 7) solid; */
+      flex-wrap: wrap;
 }
 .small1 img{
   width: 100%;
@@ -606,7 +631,6 @@
   height: 5vh;
    /* border: 2px rgb(77, 6, 228) solid; */
 }
-
 
 
 /* adress------------------------ */
@@ -623,6 +647,7 @@
   height: 60vh;
    /* border: 2px rgb(10, 171, 5) solid; */
    display: flex;
+   flex-wrap: wrap;
 }
 .categories {
   list-style: none; /* remove default bullets */
@@ -640,6 +665,7 @@
 .cats{
   margin-top: 40px;
   width: 25%;
+  flex-wrap: wrap;
    /* border: 2px rgb(11, 14, 151) solid; */
 }
 
@@ -721,6 +747,7 @@ padding: 8px 20px;
   display: flex;
   justify-content: space-between;
     /* border: 2px red solid; */
+    flex-wrap: wrap;
 }
 .footer1{
   height: 30px;
@@ -735,6 +762,9 @@ padding: 8px 20px;
   gap: 10px;
   margin: 0 10px;
   cursor: pointer;
+}
+.footer2{
+  flex-wrap: wrap;
 }
 #backtotop {
   position: fixed; /* stays in one place even when scrolling */
