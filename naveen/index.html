@@ -83,7 +83,7 @@
        <div class="titles">
            <h3><b>New Trending</b></h3>
       <h1><b>Kids Fashion</b></h1>
-      <h5><i>Last call for upto 15%</i></h5>
+       <h5>𝕷𝖆𝖘𝖙 𝖈𝖆𝖑𝖑 𝖋𝖔𝖗 𝖚𝖕𝖙𝖔 15%</h5>
       <button><b>SHOP NOW</b></button>
         </div>
     </div>
@@ -92,7 +92,7 @@
        <div class="titles">
            <h3><b>New Trending</b></h3>
       <h1><b>Men Fashion</b></h1>
-      <h5><i>Last call for upto 15%</i></h5>
+      <h5>𝕷𝖆𝖘𝖙 𝖈𝖆𝖑𝖑 𝖋𝖔𝖗 𝖚𝖕𝖙𝖔 15%</h5>
       <button><b>SHOP NOW</b></button>
         </div>
     </div>
@@ -117,7 +117,7 @@
             </div>
                 <div class="matter">
                 <h5>MONEY BACK GUARANTEE</h5>
-                <p>100% money back guarantee</p>
+                <p>100% money back guarantee </p>
             </div>
            </div>
            <div class="box">
@@ -925,7 +925,7 @@
   </div>
   </div>
 </div>
-<div></div>
+</div></div>
 </section>
 
 <footer id="footer">
@@ -938,11 +938,36 @@
       <img src="./visa2.png" alt="">
       <img src="./visa3.png" alt="">
       <img src="./visa4.png" alt="">
-        <button id="backtotop">⇧</button>
+      
     </div>
   </div>
   </button>
 </footer>
+<!-- Back to Top Button -->
+<button id="backtotop" title="Go to top">↑</button>
+
+<script>
+  // Get the button
+  const backToTopButton = document.getElementById("backtotop");
+
+  // Show button on scroll
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+
+  // Scroll to top on click
+  backToTopButton.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
 
 
 
@@ -1003,27 +1028,7 @@
 
 <!-- last botttomtotop button -->
 
-<script>
-const backToTopBtn = document.getElementById("backtotop");
 
-// Show button when scrolled down
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    backToTopBtn.style.display = "block";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-});
-
-
-// Scroll smoothly to top when clicked
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-</script>
 
 <script>
   // Disable vertical scroll

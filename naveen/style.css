@@ -2,7 +2,8 @@
 html, body {
   overflow-y: hidden; /* Stop vertical scrolling */
   height: 100%;       /* Prevent extra page height */
-}
+  overflow-x: hidden;
+  }
 
  .navbar {
     position: fixed;
@@ -21,7 +22,7 @@ html, body {
     /* display: flex; */
        gap:76px;
        height: 65px;
-       /* border: 2px rgb(46, 170, 15) solid; */
+       border: 2px rgb(46, 170, 15) solid;
        background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity))
          /* background-color: rgba(255, 255, 0, 0.112); */
 }
@@ -745,10 +746,10 @@ padding: 8px 20px;
   flex-wrap: wrap;
 }
 #backtotop {
-  position: fixed; /* stays in one place even when scrolling */
+  position: fixed;
   bottom: 30px;
   right: 10px;
-  background-color:greenyellow;
+  background-color: greenyellow;
   color: #131010;
   border: none;
   border-radius: 20%;
@@ -762,10 +763,10 @@ padding: 8px 20px;
 }
 
 #backtotop:hover {
-  background-color:greenyellow;
   transform: scale(1.1);
   color: black;
 }
+
 
 
 
@@ -792,6 +793,28 @@ padding: 8px 20px;
 .carousel-item{
   margin-top: 50px;
 }
+.carousel-item h3{
+font-size: x-large;
+  /* border:  2px red solid; */
+  margin-top: -180px;
+  margin-left: -100px;
+}
+.carousel-item h1 b{
+font-size: x-large;
+  margin-top: -10px;
+  position:absolute;
+  /* border:  2px red solid; */
+    margin-left: -80px;
+}
+.carousel-item h5{
+  font-size: x-large;
+  margin-top: 25px;
+    margin-left: -100px;
+}
+.carousel-item button{
+   margin-left: -60px;
+}
+
 .navbar-nav {
   background-color: rgb(129, 206, 161);
   width: 40%;
@@ -808,7 +831,7 @@ padding: 8px 20px;
   width: 100%;
 }
 .box{
-  width: 100%;
+  width: 90%;
 }
 
 .wear{
@@ -832,10 +855,11 @@ padding: 8px 20px;
     /* border: 2px rgb(21, 34, 179) solid; */
 }
 .p1{
-  width: 47%;
+  width: 45%;
   height: 350px;
     /* border: 2px rgb(19, 177, 63) solid; */
 }
+
 #cosmetics{
     height: 1900px;
       /* border: 2px rgb(19, 177, 63) solid; */
@@ -861,16 +885,16 @@ padding: 8px 20px;
     display: inline;
     justify-content: space-between;
     column-gap: 20px;
-    
   }
   .pay{
     margin-top: 20px;
-    width: 100%;
-    column-gap: 10px;
+    width: 95%;
+    /* column-gap: 10px; */
     /* border: 2px red solid; */
   }
+
   .feb4{
-    width: 100%;
+    width: 99%;
     /* height: 420px; */
     display: block;
     justify-content: center;
@@ -915,7 +939,7 @@ padding: 8px 20px;
     text-align: center;
      /* border: 2px rgb(9, 158, 93) solid; */
   }
-  }
+  
   .catbox1{
     /* margin-top: -5px; */
     width: 100%;
@@ -939,3 +963,226 @@ padding: 8px 20px;
     margin-top: 10px;
     padding: 10px ;
   }
+}
+
+
+@media screen and (min-width:429px)and (max-width: 769px) {
+  /* Navbar container */
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 65px;
+    padding: 0 15px;
+  }
+
+  /* Logo */
+  #name {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .container-fluid img {
+    width: 45px;
+    height: auto;
+  }
+
+  /* Search bar + button */
+  .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .d-flex input {
+    width: 100%;
+    max-width: 200px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .d-flex button {
+    height: 35px;
+    padding: 0 10px;
+  }
+
+  /* Navbar icons */
+  .icons {
+    width: auto;
+    font-size: 22px;
+    gap: 10px;
+  }
+
+
+  /* Banner adjustments for 769px screens */
+
+  #banner {
+    height: 400px; /* adjust banner height for tablet */
+    position: relative;
+  }
+
+  .titles {
+    top: 40px; /* move text lower than 1080px */
+    left: 20px; /* reduce left offset */
+  }
+
+  .titles h3 {
+    font-size: 35px; /* smaller but visible */
+  
+  }
+
+  .titles h1 {
+    font-size: 40px;
+  }
+
+  .titles button {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+.boxes{
+  margin-top: -120px;
+  /* border: 2px red solid; */
+  width: 100%;
+}
+.box{
+  width: 90%;
+  font-size: 28px;
+}
+.w11{
+  width: 100%;
+ margin-top: 20px;
+}
+.para{
+  margin-left: 70px;
+    font-size: 25px;
+    text-align: center;
+}
+.products{
+  margin-top: 40px;
+  width: 100%;
+   height: 1850px;
+    /* border: 2px rgb(21, 34, 179) solid; */
+}
+.p1{
+  width: 30%;
+  height: 350px;
+    /* border: 2px rgb(19, 177, 63) solid; */
+}
+#cosmetics{
+    height: 1260px;
+      /* border: 2px rgb(19, 177, 63) solid; */
+}
+.cosmetics{
+  width: 100%;
+  height: 700px;
+      border: 2px rgb(148, 207, 54) solid;
+}
+
+.glasses,.girl{
+  width: 47%;
+}
+
+.track{
+  width: 100%;
+  /* border: 2px rgb(21, 34, 179) solid; */
+}
+ .card {
+  width: 20%;
+    flex: 0 0 33%;  /* one per row */
+  }
+ .delivery{
+  width: 100%;
+    margin-top: -30px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* column-gap: 20px; */
+  
+  }
+.pay{
+   flex-wrap: wrap;
+    margin-top: 20px;
+    width: 45%;
+    /* column-gap: 10px; */
+    border: 2px red solid;
+  }
+  .feb4 img{
+    width: 100%;
+  }
+ .feb4{
+  flex-wrap: wrap;
+    width: 47%;
+  padding: 10px;
+    /* height: 420px; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+       /* border: 2px red solid; */
+  }
+   .big{
+    flex-wrap: wrap;
+    width: 100%;
+       /* border: 2px rgb(17, 48, 224) solid; */
+  }
+  .container{
+       /* border: 2px red solid; */
+       width: 49%;
+       flex-wrap: wrap;
+  }
+  .small{
+    width: 100%;
+    display: flex;
+      /* border: 2px red solid; */
+      flex-wrap: wrap;
+  }
+  #contacts{
+     flex-wrap: wrap;
+      /* border: 2px rgb(29, 178, 41) solid; */
+  }
+   .contacts{
+    height: 800px;
+    padding: 0;
+    width: 95%;
+    margin-top: -42px;
+    flex-wrap: wrap;
+    /* border: 2px rebeccapurple solid; */
+   
+  }
+  .cats{
+    width: 48%;
+    height: 370px;
+    /* flex-wrap: wrap; */
+    /* border: 2px red solid; */
+  }
+    .catbox1{
+      flex-wrap: wrap;
+    width: 50%;
+  
+  }
+  .catbox{
+    width: 98%;
+    /* border: 2px red solid; */
+    flex-wrap: wrap;
+  }
+  .footer{
+
+    height: 130px;
+    /* border: 2px greenyellow solid; */
+    margin-top: 20px;
+  }
+  .footer2 img{
+    width:20%;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.403);
+    margin-top: 10px;
+    padding: 10px ;
+  }
+
+}
+
+
