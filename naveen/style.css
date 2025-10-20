@@ -549,7 +549,7 @@ left: 130px;
 .bran {
   display: flex;
   gap: 20px;
-  animation: brands 15s linear infinite;
+  animation: brands 7s linear infinite;
 }
 .sony img {
   height: 100px;
@@ -791,11 +791,20 @@ padding: 8px 20px;
 }
 .carousel-item{
   margin-top: 50px;
- 
+}
+.navbar-nav {
+  background-color: rgb(129, 206, 161);
+  width: 40%;
+  padding: 20px;
+  margin-top: -140px;
+  margin-left: -12px;
+}
+.icons{
+   background-color: rgb(129, 206, 161);
 }
 .boxes{
   margin-top: -20px;
-  border: 2px red solid;
+  /* border: 2px red solid; */
   width: 100%;
 }
 .box{
@@ -806,7 +815,6 @@ padding: 8px 20px;
   margin-top: -50px;
   height: 790px;
     /* border: 2px red solid; */
-     
 }
 .w11{
   width: 100%;
@@ -816,26 +824,26 @@ padding: 8px 20px;
 }
 #ppr{
  height: 1850px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 .products{
   width: 100%;
    height: 1850px;
-    border: 2px rgb(21, 34, 179) solid;
+    /* border: 2px rgb(21, 34, 179) solid; */
 }
 .p1{
   width: 47%;
   height: 350px;
-    border: 2px rgb(19, 177, 63) solid;
+    /* border: 2px rgb(19, 177, 63) solid; */
 }
 #cosmetics{
     height: 1900px;
-      border: 2px rgb(19, 177, 63) solid;
+      /* border: 2px rgb(19, 177, 63) solid; */
 }
 .cosmetics{
   width: 100%;
   height: 900px;
-      border: 2px rgb(21, 34, 179) solid;
+      /* border: 2px rgb(21, 34, 179) solid; */
 }
 .glasses,.girl{
   width: 100%;
@@ -887,25 +895,42 @@ padding: 8px 20px;
   }
   .small{
     width: 100%;
+
   }
   .contacts{
-    border: 2px rebeccapurple solid;
+    height: 400px;
+    padding: 0;
+    margin-top: -42px;
+    /* border: 2px rebeccapurple solid; */
   }
   .cats{
     width: 100%;
+    /* padding: 0; */
+
+     /* margin-top: 1px; */
+     /* border: 2px rgb(9, 158, 93) solid; */
+  }
+  .cat1{
+
+    text-align: center;
+     /* border: 2px rgb(9, 158, 93) solid; */
+  }
   }
   .catbox1{
+    /* margin-top: -5px; */
     width: 100%;
+  
   }
   .catbox{
     width: 100%;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     flex-wrap: wrap;
   }
   .footer{
-    height: 200px;
-    border: 2px greenyellow solid;
-    margin-top: 1160px;
+
+    height: 210px;
+    /* border: 2px greenyellow solid; */
+    margin-top: 1120px;
   }
   .footer2 img{
     width:40%;
@@ -914,4 +939,3 @@ padding: 8px 20px;
     margin-top: 10px;
     padding: 10px ;
   }
-}
