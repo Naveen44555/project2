@@ -169,6 +169,8 @@ left: 130px;
       text-align: center;
       margin: 40px 0 5px 0;
       position: relative;
+      flex-wrap: wrap;
+
     }
 
 
@@ -386,51 +388,6 @@ left: 130px;
     text-align: center;
     font-size: larger;
 }
-#watches{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-}
-.watch{
-    width: 89%;
-        /* border: 2px green solid; */
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    justify-content: space-evenly;
-    /* padding: 0 10px; */
-    /* border: 2px goldenrod solid; */
-    text-align: center;
-    flex-wrap: wrap;
-    transition: tranform 0.5s ease;
-}
-.watch::-webkit-scrollbar {
-  display: none; /* hide scrollbar */
-}
-
-.previous, .nextone {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0 10px;
-}
-
-.previous{ left: 0; }
-.nextone{ right: 0; }
-
-.card {
-  min-width: 20%;  /* 100 / 5 = 20 → shows 5 items */
-}
-
 
 
 /* watches----------------------- */
@@ -454,6 +411,7 @@ left: 130px;
       /* box-sizing: border-box; */
       padding: 10px;
       text-align: center;
+      /* flex-wrap: wrap; */
     }
     .card img {
       width: 100%;
@@ -471,6 +429,7 @@ left: 130px;
       cursor: pointer;
       padding: 5px 10px;
       z-index: 10;
+      flex-wrap: wrap;
     }
     .prev { left: 0; }
     .next { right: 0; }
@@ -483,6 +442,7 @@ left: 130px;
     margin-top: 60px;
     display: flex;
     justify-content: center;
+
 }
 .delivery{
     width: 89%;
@@ -834,7 +794,7 @@ padding: 8px 20px;
  
 }
 .boxes{
-  margin-top: -30px;
+  margin-top: -20px;
   border: 2px red solid;
   width: 100%;
 }
@@ -843,11 +803,115 @@ padding: 8px 20px;
 }
 
 .wear{
-  height: 600px;
-    border: 2px red solid;
+  margin-top: -50px;
+  height: 790px;
+    /* border: 2px red solid; */
+     
 }
 .w11{
   width: 100%;
+    padding: 20px 10px;
+    margin-top: 20px;
+     /* border: 2px rgb(39, 185, 85) solid; */
 }
-
+#ppr{
+ height: 1850px;
+    border: 2px red solid;
+}
+.products{
+  width: 100%;
+   height: 1850px;
+    border: 2px rgb(21, 34, 179) solid;
+}
+.p1{
+  width: 47%;
+  height: 350px;
+    border: 2px rgb(19, 177, 63) solid;
+}
+#cosmetics{
+    height: 1900px;
+      border: 2px rgb(19, 177, 63) solid;
+}
+.cosmetics{
+  width: 100%;
+  height: 900px;
+      border: 2px rgb(21, 34, 179) solid;
+}
+.glasses,.girl{
+  width: 100%;
+}
+.track{
+  width: 100%;
+  /* border: 2px rgb(21, 34, 179) solid; */
+}
+ .card {
+  width: 50%;
+    flex: 0 0 50%;  /* one per row */
+  }
+  .delivery{
+    margin-top: -30px;
+    display: inline;
+    justify-content: space-between;
+    column-gap: 20px;
+    
+  }
+  .pay{
+    margin-top: 20px;
+    width: 100%;
+    column-gap: 10px;
+    /* border: 2px red solid; */
+  }
+  .feb4{
+    width: 100%;
+    /* height: 420px; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+       /* border: 2px red solid; */
+  }
+  .big{
+    flex-wrap: wrap;
+    width: 100%;
+       /* border: 2px rgb(17, 48, 224) solid; */
+  }
+  .container{
+       /* border: 2px red solid; */
+       width: 100%;
+       flex-wrap: wrap;
+  }
+  .container h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-style:oblique;
+   color: crimson;
+  }
+  .small{
+    width: 100%;
+  }
+  .contacts{
+    border: 2px rebeccapurple solid;
+  }
+  .cats{
+    width: 100%;
+  }
+  .catbox1{
+    width: 100%;
+  }
+  .catbox{
+    width: 100%;
+    border: 2px red solid;
+    flex-wrap: wrap;
+  }
+  .footer{
+    height: 200px;
+    border: 2px greenyellow solid;
+    margin-top: 1160px;
+  }
+  .footer2 img{
+    width:40%;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.403);
+    margin-top: 10px;
+    padding: 10px ;
+  }
 }
