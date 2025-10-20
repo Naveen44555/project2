@@ -1,13 +1,26 @@
-.navbar{
-    display: flex;
-    /* gap: 100px; */
-    justify-content: space-around;
-    /* border: 2px red solid; */
+
+html, body {
+  overflow-y: hidden; /* Stop vertical scrolling */
+  height: 100%;       /* Prevent extra page height */
 }
+
+ .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* always on top */
+  }
 .container-fluid{
     /* display: flex; */
        gap:76px;
-       height: 70px;
+       height: 65px;
        /* border: 2px rgb(46, 170, 15) solid; */
        background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity))
          /* background-color: rgba(255, 255, 0, 0.112); */
@@ -18,10 +31,12 @@
 }
 .container-fluid img{
   width: 55px;
+  
 }
 .d-flex input{
-    width: 330px;
+       width: 274px;
     height: 40px;
+    margin-top: -px;
     /* border: 2px solid red; */
 }
 .icons{
@@ -33,7 +48,9 @@
     cursor: pointer;
 }
 #banner{
-    margin-top: 5px;
+    margin-top: 70px;
+    height: 540px;
+     /* border: 2px rgb(45, 49, 39) solid; */
 }
 .titles{
 position: absolute;
@@ -111,6 +128,7 @@ left: 130px;
     width: 90%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .w11{
     width: 30%;
@@ -793,11 +811,43 @@ padding: 8px 20px;
 
 
 
-/* @media screen and (max-width: 425px)
+@media screen and (max-width: 425px)
 {
  .free{
     width: 100%;
     flex-direction: column;
  }   
-} */
+#banner{
+  height: 170px;
+}
+.d-flex input{
+  margin-top: -60px;
+}
+.btn-outline-success {
+  /* top: 200px; */
+  margin-top: -60px;
+  height: 40px;
+  bottom: 100px;
+}
+.carousel-item{
+  margin-top: 50px;
+ 
+}
+.boxes{
+  margin-top: -30px;
+  border: 2px red solid;
+  width: 100%;
+}
+.box{
+  width: 100%;
+}
 
+.wear{
+  height: 600px;
+    border: 2px red solid;
+}
+.w11{
+  width: 100%;
+}
+
+}

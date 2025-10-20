@@ -10,7 +10,6 @@
 </head>
   <body>
 
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <img src="./shoppingo-logo-exact-color-match.png" alt="">
@@ -21,31 +20,31 @@
 
      <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button  class="btn btn-outline-success" type="submit">Search</button>
       </form>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#banner">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categories</a>
+          <a class="nav-link" href="#over">Categories</a>
         </li>
 
              <li class="nav-item">
-          <a class="nav-link" href="#">Shop</a>
+          <a class="nav-link" href="#products">Shop</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#contacts">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">OUR STORE</a>
+          <a class="nav-link" href="#brands">OUR STORE</a>
         </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          About
+        Track order
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Track order</a></li>
@@ -75,7 +74,7 @@
         <div class="titles">
            <h3><b>New Trending</b></h3>
       <h1><b>Women Fashion</b></h1>
-      <h5><i>Last call for upto 15%</i></h5>
+      <h5>𝕷𝖆𝖘𝖙 𝖈𝖆𝖑𝖑 𝖋𝖔𝖗 𝖚𝖕𝖙𝖔 15%</h5>
       <button><b>SHOP NOW</b></button>
         </div>
     </div>
@@ -1029,9 +1028,15 @@ backToTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
-
-
 </script>
 
+<script>
+  // Disable vertical scroll
+document.body.style.overflow = 'hidden';
+
+// Enable again later
+document.body.style.overflow = 'auto';
+
+</script>
 </body>
 </html>
